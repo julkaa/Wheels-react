@@ -1,0 +1,508 @@
+.content#searchPage {
+    background-color: #F9F3EE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+
+        .row.navigation {
+            margin-bottom: 40px;
+            align-self: flex-start;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0.06em;
+            text-align: center;
+
+            span {
+
+                &:first-child {
+                    color: #395F8D;
+                }
+            }
+        }
+
+        .row.types {
+            display: flex;
+            flex-direction: row;
+
+            .button {
+                margin-left: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                //styleName: buttons;
+                font-family: Roboto;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0.06em;
+                text-align: left;
+
+                background-color: transparent;
+                color: #395F8D;
+                width: 292px;
+                height: 52px;
+                border: 1px solid #395F8D;
+                border-radius: 8px;
+
+                &.active {
+
+                    background-color: #395F8D;
+                    color: #F9F3EE;
+                }
+
+                &:first-child {
+                    margin-left: 0px;
+                }
+            }
+
+            &#vTypeList1 {
+                margin: 0 0 30px 0;
+            }
+        }
+
+
+    }
+
+    .row.filtersAndResults {
+        display: flex;
+        flex-direction: row;
+
+        .filters {
+            width: 400px;
+            
+            display: flex;
+            flex-direction: column;
+            padding: 0 18px 30px 18px;
+
+            .carWear {
+                display: flex;
+                flex-direction: row;
+
+                .button {
+                    width: 110px;
+                    height: 52px;
+                    margin-left: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    letter-spacing: 0.06em;
+                    text-align: left;
+
+                    background-color: transparent;
+                    color: #395F8D;
+                    border: 1px solid #395F8D;
+                    border-radius: 8px;
+
+                    &.active {
+                        background-color: #395F8D;
+                        color: #F9F3EE;
+                    }
+
+                    &:first-child {
+                        margin-left: 0px;
+                    }
+                }
+            }
+
+            p.title {
+                font-family: Unbounded;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 40px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+
+            .dropdown,
+            .slider,
+            .checkbox {
+                margin-top: 30px;
+                //styleName: h4;
+                font-family: Roboto;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 27px;
+                letter-spacing: 0.06em;
+                text-align: left;
+
+                .sliderRange {
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                p {
+                    margin: 0 0 10px 0 !important;
+                }
+            }
+
+            //.region {}
+
+            .dropdown.fromto {
+                .row {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                    .MuiFormControl-root {
+
+                        .MuiInputBase-root {
+
+                            width: 150px;
+                            height: 54px;
+                            padding: 0 15px 0 15px;
+                        }
+                    }
+                }
+            }
+
+            .button.addMark {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 179px;
+                height: 24px;
+                //styleName: body 2;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21px;
+                letter-spacing: 0.06em;
+                text-align: left;
+                margin-left: auto;
+                color: #395F8D;
+                margin-right: 35px;
+            }
+
+            .checkbox {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    &:first-child {
+                        //styleName: h4;
+                        margin: 0px;
+                        font-family: Roboto;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 27px;
+                        letter-spacing: 0.06em;
+                        text-align: left;
+
+                    }
+                }
+
+                .box {
+                    border: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: start;
+                    padding: 0;
+
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                        height: 22px;
+                        margin: 0 0 10px 0;
+
+                        label {
+                            font-family: Roboto;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 21px;
+                            letter-spacing: 0.06em;
+                            text-align: left;
+
+                        }
+
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+
+                }
+
+
+            }
+
+            .dropdown {
+                .row{
+                    width: 360px;
+                }
+                &.state {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            .dropAllFilters {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21px;
+                letter-spacing: 0.06em;
+                text-align: left;
+                margin-top: 40px;
+            }
+
+            .ExtendedSearch {
+                margin-left: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                //styleName: buttons;
+                font-family: Roboto;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0.06em;
+                text-align: left;
+
+                background-color: #395F8D;
+                color: #F9F3EE;
+                width: 360px;
+                height: 54px;
+                border: 1px solid #395F8D;
+                border-radius: 8px;
+                margin-top: 40px;
+
+                img {
+                    margin: 0 10px 0 0;
+                }
+            }
+        }
+
+        .rightSide {
+            padding-top: 30px;
+            padding-bottom: 70px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            .searchBar {
+                margin-top: 0;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+
+                min-width: 820px;
+                height: 55px;
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #D38455;
+                    min-width: 192px;
+                    border-radius: 0 8px 8px 0;
+                    //styleName: buttons;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    letter-spacing: 0.06em;
+                    text-align: center;
+
+                    color: #F9F3EE;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        margin-left: 35px;
+                    }
+
+                }
+
+                input {
+                    width: 100%;
+                    border: 1px solid #CFC1B3;
+                    border-radius: 8px 0 0 8px;
+                    //styleName: body 1;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0.06em;
+                    text-align: center;
+
+                    &:focus-visible {
+                        outline: none;
+
+                    }
+                }
+            }
+
+            .tags {
+                margin-top: 30px;
+                border-radius: 8px;
+                border: 1px solid #CFC1B3;
+                padding: 21px 30px 21px 30px;
+                min-width: 820px;
+                min-height: 126px;
+                display: flex;
+                justify-content: space-between;
+
+                .tag {
+                    display: inline-block;
+                    align-items: center;
+                    background-color: #D38455;
+                    border-radius: 8px;
+                    padding: 4px 10px 4px 10px;
+                    //styleName: body 1;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0.06em;
+                    color: #F9F3EE;
+
+                    text-align: center;
+
+                    img {
+                        width: 13px;
+                        height: 13px;
+                        margin-right: 10px;
+                        margin-bottom: -1px;
+                    }
+                }
+
+                .saveSearch {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    div {
+                        margin-left: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: Roboto;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        letter-spacing: 0.06em;
+                        text-align: left;
+
+                        background-color: #395F8D;
+                        color: #F9F3EE;
+                        width: 225px;
+                        height: 52px;
+                        border: 1px solid #395F8D;
+                        border-radius: 8px;
+                    }
+                }
+            }
+
+            .resultCount {
+                p {
+                    //styleName: body 2;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    letter-spacing: 0.06em;
+                    text-align: right;
+
+                }
+            }
+            .orderByAndOfferQuantity{
+                display: flex;
+                justify-content: space-between;
+                .orderBy, .offerQuantity{
+                    .MuiInputBase-root {
+                        width: 400px;
+                        height: 54px;
+                    }
+                
+                }
+            }
+            .carCollection{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                max-width: 880px;
+                align-self: center;
+                .card{
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+    }
+
+
+    /**/
+    .MuiInputBase-root {
+        width: 360px;
+        height: 54px;
+    }
+
+    .MuiSlider-rail {
+        color: #CFC1B3;
+    }
+
+    .MuiSlider-thumb {
+        color: #395F8D;
+
+        &:hover {
+            box-shadow: none !important;
+        }
+
+        height: 15px;
+        width: 15px;
+    }
+
+    .MuiSlider-track {
+        color: #395F8D;
+    }
+
+    .MuiSlider-root {
+        height: 5px !important;
+    }
+
+    .Mui-focusVisible {
+        box-shadow: none !important;
+    }
+
+    .MuiFormControl-root {
+        margin: 0;
+
+        .MuiInputBase-root {
+            padding: 0 20px 0 20px;
+        }
+    }
+
+
+}

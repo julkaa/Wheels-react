@@ -1,0 +1,19 @@
+.MuiSlider-rail{
+    color: #CFC1B3;
+}
+.MuiSlider-thumb{
+    color: #D38455;
+    &:hover{
+        box-shadow: none !important;
+    }
+    height: 25px;
+}
+.MuiSlider-track{
+    color: #D38455;
+}
+.MuiSlider-root{
+    height: 9px !important;
+}
+.Mui-focusVisible{
+    box-shadow: none !important;
+}

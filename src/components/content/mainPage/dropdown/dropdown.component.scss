@@ -1,0 +1,59 @@
+.MuiSelect-select{
+    width: 505px;
+}
+
+.MuiPaper-root{
+    em{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0.06em;
+        text-align: left;
+        font-style: normal;
+    }
+}
+.MuiSelect-select{
+    text-align: left;
+}
+.MuiFormControl-root{
+    // &:hover{
+            
+    //     }
+        &.Mui-focused .MuiOutlinedInput-notchedOutline{
+    border: 1px solid #484850;
+    border-radius: 5px 5px 0 0;
+  }
+    .MuiInputBase-root{
+        background-color: #F9F3EE;
+        width: 505px;
+        padding: 0 40px 0 40px;
+        border-radius: 8px;
+        border-color: #CFC1B3 !important;
+        box-shadow: none;
+        border-width: 1px;
+        &:hover{
+            border-color: #CFC1B3 !important;
+        }
+        &.Mui-focused{
+            border-color: #CFC1B3 !important;
+        }
+        &.Mui-focused .MuiOutlinedInput-notchedOutline{
+            border: 1px solid #CFC1B3;
+            
+          }
+        & .MuiOutlinedInput-notchedOutline{
+            border: 1px solid #CFC1B3 !important;
+        }
+    
+    em{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0.06em;
+        text-align: left;
+        font-style: normal;
+    }
+}
+}

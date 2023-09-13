@@ -1,0 +1,80 @@
+import { v4 as uuidv4 } from 'uuid';
+export default function CreateCar
+(
+    vehicleType,
+    region,
+    bodyType,
+    price,
+    drivenDistance,
+    brand,
+    model,
+    year,
+    transmission,
+    fuelType,
+    wheelDrive,
+    isCustomsClear,
+    hasCarAccident,
+    technicalState,
+    lacquerСoatingState,
+    color,
+    offerDelay,
+    images,
+    description,
+    phoneNumber,
+    engineVolume,
+    drivenFrom,
+    ownerName,
+    city
+)
+{
+    return {
+        id: uuidv4(),
+        vehicleType: vehicleType,
+        region: region,
+        bodyType: bodyType,
+        price: price,
+        drivenDistance: drivenDistance,
+        brand: brand,
+        model: model,
+        year: year,
+        transmission: transmission,
+        fuelType: fuelType,
+        wheelDrive: wheelDrive,
+        isCustomsClear: isCustomsClear,
+        hasCarAccident: hasCarAccident,
+        technicalState: technicalState,
+        lacquerСoatingState: lacquerСoatingState,
+        drivenFrom: drivenFrom,
+        city: city,
+        color: color,
+        ownerName: ownerName,
+        offerDelay: offerDelay,
+        images: images,
+        description: description,
+        phoneNumber: phoneNumber,
+        engineVolume: engineVolume
+    }
+}
+export function AdaptCar(car){
+    return {
+        vehicle_type: car.vehicleType,
+        brand: car.brand,
+        model: car.model,
+        vehicle_year: car.year,
+        mileage: car.drivenDistance,
+        mileage_unit: 'тис. ки',
+        body_type: car.bodyType,
+        state: car.region,
+        city: car.city,
+        description: car.description,
+        color: car.color,
+        shipped_from: car.drivenFrom,
+        technical_state: car.technicalState,
+        paint_coating: car.color,
+        price_us: car.price,
+        fuel_type: car.fuelType,
+        transmission_type: car.transmission,
+        drive_type: car.wheelDrive,
+        engine_volume: car.engineVolume
+    }
+}

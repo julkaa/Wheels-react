@@ -1,0 +1,649 @@
+.content#carCardPage {
+    padding: 0px 65px 0px 65px;
+    background-color: #F9F3EE;
+    padding-bottom: 275px;
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        &:first-child{
+            margin-top: 101px;
+        }
+
+
+        .leftSide {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 820px;
+
+            .navigation {
+                position: absolute;
+                top: -95px;
+                left: 0px;
+                p {
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    letter-spacing: 0.06em;
+                    text-align: center;
+
+                    //styleName: body 2;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    letter-spacing: 0.06em;
+                    text-align: center;
+
+                }
+            }
+
+            .images {
+                display: flex;
+                flex-direction: column;
+
+                .main {
+                    border-radius: 8px;
+                    overflow: hidden;
+                    width: 820px;
+                    height: 572px;
+                    object-fit: contain;
+                    background-color: #EFE1D3;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .list {
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    height: 127px;
+
+                    .image {
+                        margin-left: 20px;
+
+                        &:first-child {
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+
+            .breefInfo {
+                margin-top: 30px;
+                display: flex;
+                height: 48px;
+
+                .stat {
+                    margin-left: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-width: 190px;
+                    //styleName: buttons;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    letter-spacing: 0.06em;
+                    text-align: center;
+
+                    &:first-child {
+                        margin-left: 0px;
+                    }
+
+                    img {
+                        margin-right: 15px;
+                    }
+                }
+            }
+
+            .vinAndCarCodes {
+                display: flex;
+                flex-direction: row;
+                margin-top: 45px;
+                height: 56px;
+
+                div {
+                    border-radius: 8px;
+                }
+
+                .vcc {
+                    margin-left: 20px;
+
+                    &:first-child {
+                        margin-left: 0px;
+                    }
+                }
+
+                .carCode {
+                    overflow: hidden;
+                    display: flex;
+                    align-items: flex-start;
+                    width: 190px;
+                    border: 1px solid #395F8D;
+                    //styleName: body 1;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0.06em;
+                    text-align: left;
+
+                    .countryBadge {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 0;
+                        width: 44px;
+                        height: 56px;
+                        background-color: #395F8D;
+                        //styleName: secondary;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: #F9F3EE;
+
+                        img {
+                            width: 21px;
+                            height: 21px;
+                        }
+                    }
+
+                    .code {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: auto;
+                        width: calc(100% - 44px);
+                    }
+                }
+
+                .vinBadge {
+
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    width: 295px;
+                    background-color: #395F8D;
+                    //styleName: body 1;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0.06em;
+                    text-align: left;
+                    color: #FFFFFF;
+
+                    img {
+                        margin-left: 16px;
+                        margin-right: 15px;
+                    }
+                }
+
+                .vinCode {
+                    border: 1px solid #395F8D;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    width: 295px;
+                    height: 56px;
+                    //styleName: body 1;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0.06em;
+                    text-align: left;
+
+                    div {
+                        border-radius: 0;
+                        width: 44px;
+                        height: 56px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #395F8D;
+                        margin-right: 15px;
+
+                        img {
+                            margin-left: 16px;
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+
+            .generalSettings {
+                margin-top: 45px;
+                background-color: #EFE1D3;
+                border-radius: 8px;
+                padding: 30px;
+
+                .title {
+                    //styleName: h3;
+                    font-family: Roboto;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                }
+
+                .stat {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 30px;
+
+                    .statName {
+                        //styleName: body 2;
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        letter-spacing: 0.06em;
+                        text-align: left;
+                        width: 291px;
+                        margin-right: 20px;
+                        color: #395F8D;
+
+                    }
+
+                    .statValue {
+                        //styleName: body 2 bold;
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 21px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+
+                    }
+                }
+            }
+
+            .ownerDescription {
+                margin-top: 50px;
+
+                .title {
+                    //styleName: h3;
+                    font-family: Roboto;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                }
+
+                .text {
+                    margin-top: 30px;
+                    //styleName: body 2;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    letter-spacing: 0.06em;
+                    text-align: left;
+
+                }
+            }
+        }
+
+        .rightSide {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            margin-left: 20px;
+
+            .title {
+                //styleName: h2;
+                font-family: Unbounded;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 40px;
+                letter-spacing: 0em;
+                text-align: left;
+
+            }
+
+            .price {
+                margin: 20px 0 0 0;
+                max-height: 28px;
+                padding: 0 0 0 20px;
+                text-align: left;
+                display: flex;
+                flex-direction: row;
+
+                .usd {
+                    //styleName: h1;
+                    font-family: Unbounded;
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 45px;
+                    letter-spacing: 0em;
+                    text-align: center;
+
+                    color: #395F8D;
+                }
+
+                .uah {
+                    margin: 0 0 0 21px;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    letter-spacing: 0.06em;
+                    text-align: center;
+                    color: #8E8E8E;
+                    vertical-align: text-top;
+                }
+            }
+
+            .ownerInfo {
+                margin-top: 60px;
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 40px 30px 40px 30px;
+                width: 340px;
+                background-color: #EFE1D3;
+
+                .userTitle {
+
+                    display: flex;
+                    flex-direction: row;
+
+                    width: 285px;
+                    height: 100px;
+
+                    .avatar {
+                        display: block;
+                        overflow: hidden;
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        background-color: black;
+                        margin-right: 27px;
+
+                        img {
+                            width: 100px;
+                            height: 100px;
+                        }
+                    }
+
+                    .info {
+                        .role {
+                            font-family: Roboto;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 21px;
+                            letter-spacing: 0em;
+                            text-align: left;
+
+                        }
+
+                        .name {
+                            margin-top: 11px;
+                            //styleName: h4;
+                            font-family: Roboto;
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 27px;
+                            letter-spacing: 0.06em;
+                            text-align: left;
+
+                        }
+                    }
+                }
+
+                .button {
+
+                    margin: auto;
+                    margin-top: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 340px;
+                    max-height: 54px;
+                    padding: 19px 0px 19px 0px;
+                    border-radius: 8px;
+                    gap: 10px;
+                    background-color: transparent;
+
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    letter-spacing: 0.06em;
+                    color: #395F8D;
+                    border: 1px solid #395F8D;
+
+                    img {
+                        margin-left: 80px;
+                    }
+                }
+            }
+
+            .location {
+                padding: 30px 30px 30px 30px;
+                border-radius: 8px;
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+                width: 340px;
+                height: 86 px;
+
+                background-color: #EFE1D3;
+
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-right: 29px;
+
+                    .title {
+                        font-family: Roboto;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 27px;
+                        letter-spacing: 0.06em;
+                        text-align: center;
+                        margin-bottom: 36px;
+                    }
+
+                    .locationName {
+                        //styleName: body 2;
+                        display: flex;
+                        align-items: center; //styleName: body 2;
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        letter-spacing: 0.06em;
+                        text-align: center;
+
+
+                        img {
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 20px;
+                        }
+                    }
+                }
+
+                .image {
+                    border-radius: 8px;
+                    overflow: hidden;
+                    width: 96px;
+                    height: 86px;
+
+                }
+            }
+
+            .compareNsave {
+                margin-top: 30px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 8px;
+                    width: 190px;
+                    height: 48px;
+                    background-color: #D38455;
+                    //styleName: buttons;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    letter-spacing: 0.06em;
+                    text-align: center;
+
+                    color: #F9F3EE;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .markOffer {
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #F9F3EE;
+                border-radius: 8px;
+                width: 400px;
+                height: 344px;
+                background-color: #29494E;
+
+                .title {
+                    //styleName: h4;
+                    font-family: Roboto;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 27px;
+                    letter-spacing: 0.06em;
+                    text-align: center;
+                    margin-bottom: 0px;
+
+                }
+
+                .text {
+                    width: 330px;
+                    height: 63px;
+                    margin-top: 20px;
+                    //styleName: body 2;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    letter-spacing: 0.06em;
+                    text-align: left;
+
+                }
+
+                .button {
+                    margin: 20px 0 0 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 340px;
+                    max-height: 54px;
+                    padding: 19px 0px 19px 0px;
+                    border-radius: 8px;
+                    gap: 10px;
+                    background-color: transparent;
+
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    letter-spacing: 0.06em;
+                    border: 1px solid #F9F3EE;
+                }
+            }
+
+
+        }
+
+        .leftSide,
+        .rightSide {
+            
+            .linkButton {
+
+            min-width: 340px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                //styleName: buttons;
+                font-family: Roboto;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0.06em;
+                text-align: left;
+
+                background-color: transparent;
+                color: #395F8D;
+                width: 292px;
+                height: 52px;
+                border: 1px solid #395F8D;
+                border-radius: 8px;
+                margin-bottom: 50px;
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .rightSide {
+            .linkButton {
+                align-self: flex-end;
+                img{
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .recomendations {
+            width: 1372px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 80px;
+
+            p {
+                //styleName: h3;
+                font-family: Roboto;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 28px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-left: 67px;
+                margin-bottom: 40px;
+            }
+
+        }
+    }
+}
